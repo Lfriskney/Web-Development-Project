@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <p>You enter the army truck and find a picture.</p>
+        <p>This picture... it... looks familiar.</p>
+        <p>You realise its a picture of your expedition group and recognise one of them. Thomas</p>
+        <img class="img" src="media/soldiers.jpg" alt="soldiers">
+        <p class="itemButton" onclick="gainMemory()" id="memory">Click to gain memory</p><!--onclick calls the function from the javascript file running the code within-->
+        <p id="thomas"></p><!--this p element will change via the gainMemory() function-->
+        <p class ="buttonLayout"><a class="button" href="carry_on.html">Carry on</a></p>
+    </div>
+   
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

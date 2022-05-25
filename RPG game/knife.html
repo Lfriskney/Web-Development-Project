@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p class="music">Play <img src="media/play.svg" id="icon"></p><!--play image icon displayed and can be clicked-->
+       <p>You grab the knife, in doing so you accidently hit a bag off one of the chairs causing a loud thud.</p>
+       <p>Suddenly you hear the glass at the front of the bus break, which is then followed by the bus being moved around.</p>
+       <p>Straight away you realise that something non human is only capable of moving something this big.</p>
+       <p>With that in mind you decide to jump out of the broken window and make a break back to the highway!</p>
+       <div class="shakeBus"><!--shakebus script is ran-->
+        <img class="img" src="media/inside_bus.jpg" alt="inside bus">
+       </div>
+       <p class ="buttonLayout"><a class="button" href="run.html">RUN!</a></p>
+    </div>
+        
+    <audio id="sound"><!--audio stored on the page waiting to be played-->
+        <source src="media/glass-break.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

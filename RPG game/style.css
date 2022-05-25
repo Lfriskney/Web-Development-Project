@@ -1,0 +1,150 @@
+* {/* star selector targets entire page, setting margin and padding to 0 helps with spacing between lines*/
+    margin: 0;
+    padding: 0;
+}
+
+/*styles for my headers*/
+/*-----------------------------------------*/
+
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+}
+
+h2 {
+    padding: 1em;
+    text-align: center;
+}
+/*-----------------------------------------*/
+
+body {/*below I have added the background image which is centered giving a cool side bar effect*/
+    font-family: 'Shadows Into Light', cursive;
+    background-image: url(media/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 20px;
+}
+
+.wrapper {  /*wrapper contains everything in the middle of my page*/
+
+   background: #DEB887;/*background colour chosen is similar to the background image*/
+   padding: 1em;
+   border: 10px solid #DEB887;
+   box-shadow: 10px 10px 10px 15px #DEB887;
+   max-width: 700px;
+   margin: auto;
+   height: auto;
+   text-align: center;
+}
+
+.soldier {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 10px;
+    filter: sepia(66%);/*the sepia filter adds a graining effect which helps work with the colour scheme*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    /*Box-shadow outline which allows for full shadow around my images, taken from - https://getcssscan.com/css-box-shadow-examples*/
+}
+
+/*------------------------------------------------*/
+/*button css*/
+.buttonLayout {/*layout for button*/
+    text-align: center;
+    margin: 10px;
+}
+
+.button {
+    padding:0.5%;
+    border:1px solid black;
+    background: white;
+    color: #DEB887;
+    text-decoration: none;
+    border-radius:6px;
+    width: 160px;
+}
+
+.button:hover {
+    background:#DEB887;
+    color:white;
+}
+/*------------------------------------------------*/
+
+#icon {
+    width: 20px;
+margin: 0;
+}
+
+.music {
+    text-align: left;
+    padding: 0;
+}
+
+.two-images::after {/*aligns two images to be right by each other*/
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+.img {/*main img styling*/
+    float: center;
+    width: 40%;
+  margin: 10px;
+  border-radius: 10px;
+  filter: sepia(66%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#memory {
+    text-decoration: underline;
+}
+/*buttons made specifically for items*/
+.itemButton {
+    padding:0.5%;
+    border:1px solid black;
+    background: grey;
+    color: #DEB887;
+    text-decoration: none;
+    border-radius:6px;
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+.itemButton:hover {/*hover effect for button when mouse goes over*/
+    background:#DEB887;
+    color:grey;
+}
+/*use of external webkit to have shake animation*/
+.shakeBus:hover {/*when hovering over image with class .shakebus then run shake animation*/
+-webkit-animation: shake 1s ease-in-out .1s infinite alternate;
+}
+
+@-webkit-keyframes shake{/*rotates 15 degrees each side then returns the origin to center*/
+    from {
+        -webkit-transform: rotate(15deg);
+    }
+    to{
+        -webkit-transform: rotate(-15deg);
+        -webkit-transform-origin: center
+        center;
+    }
+}
+
+#ending {/*hides the ending section which will then reappear once button is clicked*/
+    display:none;
+}
+
+
+.endingStyle {
+    font-weight: bold;
+    color: blue;
+}

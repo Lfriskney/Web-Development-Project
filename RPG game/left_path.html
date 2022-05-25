@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p class="music">Play <img src="media/play.svg" id="icon"></p><!--shows play icon for user to click to play music-->
+        <p>You decided to take the wooded path which is very overgrown and covered in grass</p>
+        <p>You continue down this path and notice that it's getting tighter and tighter</p>
+        <p>Until finally you discover an abandoned school bus at the end of the path</p>
+        <img class="img" src="media/bus.jpg" alt="bus">
+        <p class ="buttonLayout"><a class="button" href="check_bus.html">Check bus?</a> or <a class="button" href="wooded_path_ext.html">carry on through path</a> </p>
+    </div>
+        
+    <audio id="sound"><!--the audio that will be played on the page-->
+        <source src="media/forest_walk.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

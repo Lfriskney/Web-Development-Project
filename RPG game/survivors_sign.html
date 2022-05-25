@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+     <p>You enter the building but notice that it is abandoned.</p>
+     <p>There are personal belongings scattered across the floor and blood everywhere.</p>
+     <p>But...</p>
+     <p>No boddies.</p>
+     <p>You go to check around some more, but you walk into a glass vase which drops breaking.</p>
+     <p>Suddenly a creature sprints towards your direction</p>
+     <p class="itemButton" onclick="fightBeast();myFunction('ending');" id="fight">FIGHT!</p>
+     <p id="killBeast"></p>
+     <div id="ending">
+        <p class ="buttonLayout"><a class="button" href="index.html">Play Again?</a></p>
+    </div><br>
+    </div>
+        
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+     <p>You grab the gun off the floor when suddenly a creature sprints towards you!</p>
+     <p class="itemButton" onclick="fightBeast();myFunction('ending');" id="fight">FIGHT!</p><!--calls both functions at the same time to allow for the fight and ending to appear-->
+     <p id="killBeast"></p>
+     <div id="ending">
+        <p class ="buttonLayout"><a class="button" href="index.html">Play Again?</a></p>
+    </div><br>
+    </div>
+
+    
+        
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
